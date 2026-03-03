@@ -26,11 +26,11 @@ create or replace view celkove_prumerne_mzdy_vw as
 
 --výsledný pohled:
 select
-	ccmvw.nazev_potraviny,
 	ccmvw.rok,
+	ccmvw.nazev_potraviny,
 	cpmv.vseobecna_prumerna_mzda,
 	ccmvw.prumerna_cena,
 	floor(cpmv.vseobecna_prumerna_mzda / ccmvw.prumerna_cena) as koupeschopnost
 from ceny_chleba_mleka_vw ccmvw
 left join celkove_prumerne_mzdy_vw cpmv on ccmvw.rok = cpmv.rok
-order by ccmvw.nazev_potraviny, ccmvw.rok;
+order by ccmvw.rok, ccmvw.nazev_potraviny;
