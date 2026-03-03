@@ -35,8 +35,44 @@ Obě tabulky jsem vytvořil a uložil v databázi Postgres, konkrétně v data_a
 
 <img width="984" height="135" alt="image" src="https://github.com/user-attachments/assets/b48c6167-f763-4e47-b102-b97841488c8f" />
 
+Ze sloupce *koupeschopnost* je vidět, že na počátku sledovaného období, tedy v roce 2006, bylo možné si za průměrnou mzdu koupit **1287 kg chleba** a **1437 litrů mléka**. Na konci období, tedy v roce 2018, to pak bylo **1342 kg chleba** a **1641 litrů mléka**.
 
-Ze sloupce *koupeschopnost* je vidět, že na počátku sledovaného období, tedy v roce 2006, bylo možné si za průměrnou mzdu koupit **1287 kg chleba** a **1437 litrů mléka**. Na konci období, tedy v roce 2018 to pak bylo **1342 kg chleba** a **1641 litrů mléka**.
+##
+**Úkol č. 3:**
+**Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?**
+- SQL skript pro řešení: *Project_04_script_ukol_3*.
+
+**Řešení:**
+
+<img width="420" height="62" alt="image" src="https://github.com/user-attachments/assets/b7741f15-b17d-4641-abcc-6e245993565a" />  
+
+Za sledované období v letech 2006-2018 byl potravinou s nejmenším (dokonce záporným) růstem **cukr krystal**, jehož cena se celkově snížila o **27,51 %**.
+
+##
+**Úkol č. 4:**
+**Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?**
+- SQL skript pro řešení: *Project_04_script_ukol_4*.
+
+**Řešení:**
+
+<img width="902" height="361" alt="image" src="https://github.com/user-attachments/assets/0ec8c59a-d836-4564-85f3-c0f693d94e59" />  
+
+Tabulka ukazuje, že ani v jednom sledovaném roce nebyl rozdíl růstu cen a mezd víc jak 10 %, tedy že **růst cen nebyl v žádném roce výrazně vyšší než růst mezd**.  
+Pro rok 2006 nejsou známy hodnoty, protože pro předchozí rok nabyla k dispozici data o cenách potravin.  
+
+##
+**Úkol č. 5:**
+**Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?**
+- SQL skript pro řešení: *Project_04_script_ukol_5*.
+
+**Řešení:**
+
+<img width="925" height="360" alt="image" src="https://github.com/user-attachments/assets/c051aa7f-9146-4a2c-ab95-3c071fa73c60" />  
+
+Souvislost
+
+
+
 
 
 
