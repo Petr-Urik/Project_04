@@ -1,5 +1,5 @@
 # Project_04: Vývoj mezd a cen potravin v ČR
-Čtvrtý projekt rámci Engeto: Datová akademie s Pythonem
+Čtvrtý projekt v rámci Engeto: Datová akademie s Pythonem
 ## Popis projektu
 Projekt představuje soubor několika SQL skriptů a řešení zadaných výzkumných úkolů.
 SQL skripty slouží k vytvoření vhodných základních tabulek, ze kterých lze dalšími SQL příkazy získat odpovědi na výzkumné úkoly.
@@ -17,8 +17,7 @@ SQL skripty slouží k vytvoření vhodných základních tabulek, ze kterých l
 
 Obě tabulky jsem vytvořil a uložil v databázi Postgres, konkrétně v data_academy_content.
 ## Výzkumné úkoly
-**Úkol č. 1:**  
-**Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?**  
+**Úkol č. 1: Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?**  
 - SQL skript pro řešení: *Project_04_script_ukol_1*
 
 **Řešení:**
@@ -57,7 +56,8 @@ Za sledované období v letech 2006-2018 byl potravinou s nejmenším (dokonce z
 
 <img width="902" height="361" alt="image" src="https://github.com/user-attachments/assets/0ec8c59a-d836-4564-85f3-c0f693d94e59" />  
 
-Tabulka ukazuje, že ani v jednom sledovaném roce nebyl rozdíl růstu cen a mezd víc jak 10 %, tedy že **růst cen nebyl v žádném roce výrazně vyšší než růst mezd**.  
+Tabulka ukazuje, že ani v jednom sledovaném roce nebyl rozdíl růstu cen a mezd víc jak 10 %, tedy že **růst cen potravin nebyl v žádném roce výrazně vyšší než růst mezd**.  
+
 Pro rok 2006 nejsou známy hodnoty, protože pro předchozí rok nabyla k dispozici data o cenách potravin.  
 
 ##
@@ -69,7 +69,13 @@ Pro rok 2006 nejsou známy hodnoty, protože pro předchozí rok nabyla k dispoz
 
 <img width="925" height="360" alt="image" src="https://github.com/user-attachments/assets/c051aa7f-9146-4a2c-ab95-3c071fa73c60" />  
 
-Souvislost
+**a) HDP vs. mzdy**  
+Mezi změnami HDP a růstem mezd existuje silná vazba, která se však projevuje s určitým zpožděním (půl roku až rok). Pokud HDP výrazněji naroste v jednom roce, mzdy dosahují maxima růstu často až v roce příštím (např. výraznější růst HDP v 2007 -> maximum růstu mezd až v 2008, podobně růst HDP v 2017 -> maximum růstu mezd v 2018). Částečná reakce je ale vidět už i ve stejném roce. Příčiny: Růst HDP = firmy více produkují -> na další produkci potřebují větší výkon nebo počet zaměstnanců -> růst mezd.  
+
+**b) HDP vs. ceny potravin**  
+Přestože i mezi růstem HDP a růstem cen (inflací) existuje souvislost, konkrétně u cen potravin se mnohem více uplatňují jiné vlivy jako je počasí, daně (politická rozhodnutí) a situace na globálních trzích. Z tabulky je sice vidět náznak vlivu HDP v období 2007-2008, později však pozorovatelná souvislost mizí.  
+
+Absence dat pro rok 2006 je opět způsobena tím, že se jedná o počáteční rok období a nejsou k dispozici hodnoty pro předešlý rok.
 
 
 
