@@ -34,7 +34,7 @@ Obě tabulky jsem vytvořil a uložil v databázi Postgres, konkrétně v data_a
 
 <img width="984" height="135" alt="image" src="https://github.com/user-attachments/assets/b48c6167-f763-4e47-b102-b97841488c8f" />
 
-Ze sloupce *koupeschopnost* je vidět, že na počátku sledovaného období, tedy v roce 2006, bylo možné si za průměrnou mzdu koupit **1287 kg chleba** a **1437 litrů mléka**. Na konci období, tedy v roce 2018, to pak bylo **1342 kg chleba** a **1641 litrů mléka**.
+Ze sloupce *koupeschopnost* je vidět, že na počátku sledovaného období, tedy v roce 2006, bylo možné si za průměrnou mzdu koupit **1287 kg chleba** nebo **1437 litrů mléka**. Na konci období, tedy v roce 2018, to pak bylo **1342 kg chleba** nebo **1641 litrů mléka**.
 
 ##
 **Úkol č. 3:**
