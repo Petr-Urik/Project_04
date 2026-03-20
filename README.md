@@ -35,7 +35,7 @@ b) Pořadí odvětví podle četnosti záporných roků (roků s meziročním po
 
 Dále pak **Kulturní, zábavní a rekreační činnosti** (2x, 2011 a 2013), **Profesní, vědecké a technické činnosti** (2x, 2010 a 2013), **Ubytování, stravování a pohostinství** (2x, 2009 a 2011), **Veřejná správa a obrana; povinné sociální zabezpečení** (2x, 2010 a 2011), **Výroba a rozvod elektřiny, plynu, tepla a klimat. vzduchu** (2x, 2013 a 2015).  
 
-Zbývající obory pak po jednom záporném roce.
+Zbývající obory z tabulky pak mají po jednom záporném roce.
 
 ##
 c) Odvětví, která ve sledovaném období nezaznamenala žádný meziroční pokles mezd:  
@@ -82,7 +82,7 @@ Tabulka ukazuje, že ani v jednom sledovaném roce nebyl rozdíl růstu cen a me
 
 Pro rok 2006 nejsou známy hodnoty, protože pro předchozí rok nabyla k dispozici data o cenách potravin.  
 
-Poznámka:  
+Poznámka k zaokrouhlování:  
 Sloupce *celkova_zmena_ceny_percent* a *celkova_zmena_mzdy_percent* záměrně nejsou zaokrouhleny, protože při dalších výpočtech by vlivem zaokrouhlování mohly vzniknout nepřesnosti ve výsledcích. Zaokrouhlen je až sloupec *rozdil_cena_mzda*, protože vzniká po posledním výpočtu.
 
 ##
