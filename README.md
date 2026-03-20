@@ -22,7 +22,7 @@ Obě tabulky jsem vytvořil a uložil v databázi Postgres, konkrétně v data_a
 
 **Řešení:**
 
-a)  Obrázek ukazuje odvětví a roky, ve kterých tato odvětví měla záporný růst mezd, tedy pokles mezd:
+a)  Obrázek ukazuje odvětví a roky, ve kterých tato odvětví měla záporný meziroční růst mezd, tedy pokles mezd:
 
 <img width="635" height="614" alt="image" src="https://github.com/user-attachments/assets/19b2c15f-d6b5-4c7f-928c-5486efbe4397" />  
 
@@ -56,7 +56,10 @@ c) Odvětví, která ve sledovaném období nezaznamenala žádný meziroční p
 
 <img width="1031" height="143" alt="image" src="https://github.com/user-attachments/assets/f4ae2c76-3988-405e-9eb3-9edae0e6d0a3" />
 
-Ze sloupce *koupeschopnost* je vidět, že na počátku sledovaného období, tedy v roce 2006, bylo možné si za průměrnou mzdu koupit **1287 kg chleba** nebo **1437 litrů mléka**. Na konci období, tedy v roce 2018, to pak bylo **1342 kg chleba** nebo **1641 litrů mléka**.
+Ze sloupce *koupeschopnost* je vidět, že na počátku sledovaného období, tedy v roce 2006, bylo možné si za průměrnou mzdu koupit **1287 kg chleba** nebo **1437 litrů mléka**. Na konci období, tedy v roce 2018, to pak bylo **1342 kg chleba** nebo **1641 litrů mléka**.  
+
+Poznámka k zaokrouhlování:  
+Sloupec *koupeschopnost* je zaokrouhlen dolů na nejbližší celé číslo, protože mléko se prodává v baleních po 1 litru. Podobně chléb je nejčastěji po 1 kilogramu.
 
 ##
 **Úkol č. 3:**
