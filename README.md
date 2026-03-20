@@ -98,10 +98,10 @@ Sloupce *celkova_zmena_ceny_percent* a *celkova_zmena_mzdy_percent* záměrně n
 <img width="974" height="360" alt="image" src="https://github.com/user-attachments/assets/61cdf922-0147-492a-a239-82a5e365c549" />
 
 **a) HDP vs. mzdy**  
-Mezi změnami HDP a růstem mezd existuje silná vazba, která se však projevuje s určitým zpožděním (půl roku až rok). Pokud HDP výrazněji naroste v jednom roce, mzdy dosahují maxima růstu často až v roce příštím (např. výraznější růst HDP v 2007 -> maximum růstu mezd až v 2008, podobně růst HDP v 2017 -> maximum růstu mezd v 2018). Částečná reakce je ale vidět už i ve stejném roce. Příčiny: Růst HDP = firmy více produkují -> na další produkci potřebují větší výkon nebo počet zaměstnanců -> růst mezd.  
+Mezi změnami HDP a růstem mezd existuje silná vazba, která se však projevuje s určitým zpožděním (půl roku až rok). Pokud HDP výrazněji naroste v jednom roce, mzdy dosahují maxima růstu často až v roce příštím. Například výraznější růst HDP v 2007 (+5,57 %) -> maximum růstu mezd až v 2008 (+7,87 %), podobně růst HDP v 2017 (+5,17 %) -> maximum růstu mezd v 2018 (+7,62 %). Částečná reakce je ale vidět už i ve stejném roce. Příčiny: Růst HDP = firmy více produkují -> na další produkci potřebují větší výkon nebo počet zaměstnanců -> růst mezd.  
 
 **b) HDP vs. ceny potravin**  
-Přestože i mezi růstem HDP a růstem cen zboží (inflací) existuje souvislost, tak konkrétně u cen potravin se mnohem více uplatňují jiné vlivy jako je počasí, daně (politická rozhodnutí) a situace na globálních trzích. Z tabulky je sice vidět náznak vlivu HDP v období 2007-2008, později však pozorovatelná souvislost mizí.  
+Přestože i mezi růstem HDP a růstem cen zboží (inflací) existuje souvislost, tak konkrétně u cen potravin se mnohem více uplatňují jiné vlivy jako je počasí, daně (politická rozhodnutí) a situace na globálních trzích. Z tabulky je sice vidět náznak vlivu HDP v období 2007-2008 (HDP +5,57 % -> potraviny +6,76 % resp. 6,19 %), popřípadě propad v roce 2009 (HDP -4,66 % -> potraviny -6,42 %), později však pozorovatelná souvislost mizí a trendy jsou někdy dokonce i opačné (pokles HDP -> růst cen a naopak).  
 
 Absence dat pro rok 2006 je opět způsobena tím, že se jedná o počáteční rok období a nejsou k dispozici hodnoty pro předešlý rok.
 
