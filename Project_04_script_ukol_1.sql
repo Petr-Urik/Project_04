@@ -1,33 +1,55 @@
-set search_path to data_academy_content;
+SET
+search_path TO data_academy_content;
 
 --Výzkumný úkol č. 1
 
---Odvětví s výskytem poklesu mezd:
-create or replace view odvetvi_pokles_vw as
-	select distinct
+--a) Odvětví s výskytem meziročních poklesů mezd (tj. záporných roků):
+SELECT
+	DISTINCT
+		nazev_odvetvi AS odvetvi_s_poklesem,
 		rok,
-		nazev_odvetvi,
 		rust_mzdy_percent
-	from t_petr_urik_project_sql_primary_final tpupspf
-	where rust_mzdy_percent < 0
-	order by rok, nazev_odvetvi;
+FROM
+	t_petr_urik_project_sql_primary_final tpupspf
+WHERE
+	rust_mzdy_percent < 0
+ORDER BY
+	nazev_odvetvi,
+	rok;
 
-select distinct	
-	nazev_odvetvi as odvetvi_s_poklesem
-from odvetvi_pokles_vw
-order by nazev_odvetvi;
-
---Odvětví bez poklesu mezd:
-with odvetvi_vyskyt_poklesu_cte as (
-	select distinct	
-		nazev_odvetvi
-	from odvetvi_pokles_vw opv
-	order by nazev_odvetvi
+--b) Pořadí odvětví se zápornými roky dle počtu těchto roků:
+WITH odvetvi_zaporne_roky_cte AS (
+	SELECT
+		DISTINCT
+			nazev_odvetvi,
+			rok,
+			rust_mzdy_percent
+	FROM
+		t_petr_urik_project_sql_primary_final tpupspf
+	WHERE
+		rust_mzdy_percent < 0
 	)
-select
-	nazev_odvetvi as odvetvi_bez_poklesu
-from t_petr_urik_project_sql_primary_final tpupspf
-except
-select 
-	nazev_odvetvi
-from odvetvi_vyskyt_poklesu_cte;
+SELECT 
+    nazev_odvetvi, 
+    COUNT(*)::numeric AS pocet_zapornych_roku
+FROM odvetvi_zaporne_roky_cte 
+GROUP BY nazev_odvetvi
+ORDER BY
+	pocet_zapornych_roku  DESC,
+	nazev_odvetvi;
+--LIMIT 1; -> získali bychom odvětví s maximálním počtem záporných roků
+
+--c) Odvětví bez poklesu mezd:
+SELECT
+	DISTINCT	
+		nazev_odvetvi AS odvetvi_bez_poklesu
+FROM
+	t_petr_urik_project_sql_primary_final tpupspf
+WHERE nazev_odvetvi NOT IN (
+	SELECT
+		nazev_odvetvi
+	FROM
+	t_petr_urik_project_sql_primary_final tpupspf
+	WHERE rust_mzdy_percent < 0
+	)	
+ORDER BY nazev_odvetvi;

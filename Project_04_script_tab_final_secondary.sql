@@ -1,19 +1,19 @@
-set search_path to data_academy_content;
+SET
+search_path TO data_academy_content;
 
-create or replace view evropske_zeme_vw as
-	select
-		country
-	from countries
-	where continent = 'Europe';
-
-create table t_petr_urik_project_sql_secondary_final as
-	select
-		ezv.country as zeme,
-		e.year as rok,
-		e.gdp as hdp,
-		e.gini,
-		e.population as pocet_obyvatel
-	from evropske_zeme_vw ezv
-	join economies e on ezv.country = e.country
-	where year between 2006 and 2018
-	order by zeme, rok;
+CREATE TABLE t_petr_urik_project_sql_secondary_final AS
+	SELECT
+		c.country AS zeme,
+		e.YEAR::numeric AS rok,
+		e.gdp::numeric AS hdp,
+		e.gini::numeric,
+		e.population::numeric AS pocet_obyvatel
+FROM
+	countries c
+JOIN economies e ON c.country = e.country
+WHERE
+	YEAR BETWEEN 2006 AND 2018
+	AND c.continent = 'Europe'
+ORDER BY
+	zeme,
+	rok;
